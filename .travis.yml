@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: bS6S61AzNSLXvYiMY066v5cs9zo88oNKA/74AZ4o634ezVaNCs51cSIEHj7hdoUEh/2zG/ZvkTJLv42aR6zj3ogyG79jIIgAbnjPv1CKY7cRjJNiaTPBYYb/L3YKdwtoih90M9hA1Ar/y/+NHE1esLjKDImNXgkTJUCJWpg60AgfxbHVEqlm4ivJYKjX9wOIk6g3kl8xiTTEzQ8/42vr2RYRAObBOuzh22z76K4joob4nOMl6Dn8i9m+8Z3WjD+M6DvDj0s2vorawaH5+6gjAJCvP6qsPNZ7xxw752lfzezZoFccLRO+yGqpJeTIM4ITBxjs0Scfp4/1xLfrLnMd0E74rzgDDxir0+APugQ+Dg19XBpkRkhr/x/v8IVERWhkKQyjPFmovQ6JcoSEXhaZu5f38WUTh1qoAXccAkFd3+ceIr26ouC3edLFp+wP6Wy9t3kDRse40vtsxLUOJGkYsYfjmcQNiVy62azvHbh5jC/6A54UGdnSv5TG9KpqU5s0RKD02Q34GqQcjWQDU++a7JjbAbbIiOqpyAOu6BnQTHnqr1kcG5wuGfje7fCw6YssLtlp3mnRH5ndKudlXAsZ9pRtf/l1LzuB3JAQ/WYox6B0/99eziF5ostsomjwCzC0cqhl+St5H0x/nnQmodT3b2Yx+Eiu2fXDbgO30ll4I3I=
+  app: peaceful-brushlands-26349
+  on:
+    repo: melfers/react-trello-testing
